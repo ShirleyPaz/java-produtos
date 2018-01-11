@@ -4,68 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="carrinho.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="carrinho-grid.css">
+    <link rel="stylesheet" href="carrinho.css">
     <title>Carrinho</title>
 </head>
 
 <body>
-    <!-- <table>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-        </tr>
-    </table> -->
-
     <div class="cart">
-        <div class="cart-item">
-            <div class="item-image">
-                <img src="camiseta.jpg"} alt="camiseta roxa">
-            </div>
-            <i class="fa fa-times-circle" aria-hidden="true" class="cart-item__selected"></i>
-            <div class="item-description">
-                <h4 class="item-description__title">Puma Golf Ragian Tech Polo Tee</h4>
-                <p class="item-description__color">Color:</p>
-                <i class="fa fa-circle-o" aria-hidden="true" class="description__color-icon"></i>
-                <p class="item-description__size">Size:</p>
-                <p class="item-description__size-selected">XXL</p>
-            </div>
-            <div class="item-price">
-                <p class="item-price__value">$72</p>
-            </div>
-            <div class="item-quantity">
-                <select class="item-quantity__value">
-                    <option value="1" label="1"> 1 </option>
-                    <option value="2" label="2"> 2 </option>
-                    <option value="3" label="3"> 3 </option>
-                    <option value="4" label="4"> 4 </option>
-                    <option value="5" label="5"> 5 </option>
-                    <option value="6" label="6"> 6 </option>
-                </select>
-            </div>
-            <div class="item-total">
-                <p class="item-total__value">$216</p>
+        <table class="container">
+            <tr class="cart-titles">
+                <td class="cart-titles__value col-cl-2 col-tb-4 col-dk-6">Name</th>
+                    <td class="cart-titles__value col-cl-1 col-tb-2 col-dk-2">Price</th>
+                        <td class="cart-titles__value col-cl-1 col-tb-2 col-dk-2">Quantity</th>
+                            <td class="cart-titles__value col-cl-1 col-tb-2 col-dk-2">Total</th>
+            </tr>
+            <tr>
+                <div class="cart-item row">
+                    <td class="cart-item__description col-cl-2 col-tb-4 col-dk-6">
+                        <i class="fa fa-times-circle"></i>
+                        <div class="description__image">
+                            <img src="camiseta.jpg" } alt="camiseta roxa">
+                        </div>
+                        <div class="description-details">
+                            <div class="description-details__title">
+                                <h4>Puma Golf Ragian Tech Polo Tee</h4>
+                            </div>
+                            <div class="description-details__itens">
+                                <p class="description-details__label">Color: </p>
+                                <i class="fas fa-circle"></i>
+                                <p class="description-details__label">Size:</p>
+                                <p class="description-details-size__selected">XXL</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="item-price col-cl-1 col-tb-2 col-dk-2">
+                        <div class="item-price__details">
+                            <p class="currency">$</p>
+                            <p class="value">$72</p>
+                        </div>
+                    </td>
+                    <td class="item-quantity col-cl-1 col-tb-2 col-dk-2">
+                        <select class="item-quantity__value">
+                            <option value="1" label="1"> 1 </option>
+                            <option value="2" label="2"> 2 </option>
+                            <option value="3" label="3"> 3 </option>
+                            <option value="4" label="4"> 4 </option>
+                            <option value="5" label="5"> 5 </option>
+                            <option value="6" label="6"> 6 </option>
+                        </select>
+                    </td>
+                    <td class="item-total col-cl-1 col-tb-2 col-dk-2">
+                        <div class="item-total__details">
+                            <p class="currency">$</p>
+                            <p class="value">216</p>
+                        </div>
+                    </td>
+        </table>
+        <div class="cart-subtotal">
+            <p class="cart-subtotal__label">Subtotal: </p>
+            <div class="cart-subtotal__details">
+                <p class="currency">$</p>
+                <p class="value">523</p>
             </div>
         </div>
-        <p class="cart-subtotal">$523</p>
-        <button type="submit">Shipping info
+        <button type="submit" class="cart-subtotal__button">Shipping info
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </button>
-    </div>
-    <script src="carrinho.js"></script>
+        </div>
+
+
+        <script src="carrinho.js"></script>
 </body>
 
 </html>

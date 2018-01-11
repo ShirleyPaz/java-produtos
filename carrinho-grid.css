@@ -59,7 +59,7 @@
     .col-dk-12 {width: 100%;}
 }
 
-/* large */
+/* large
 @media screen and (min-width: 1200px) {
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
@@ -73,4 +73,4 @@
     .col-lg-10 {width: 83.33%;}
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
-}
+} */
